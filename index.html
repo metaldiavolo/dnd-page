@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Справочник Школы Эль’Альдара</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #1b1b1b;
+      color: #e0e0e0;
+      font-family: Georgia, serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #f0c674;
+      font-size: 32px;
+      margin-top: 0;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+
+    details {
+      background-color: #2a2a2a;
+      border: 1px solid #444;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    summary::before {
+      content: '\f0da';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    details[open] summary::before {
+      content: '\f0d7';
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      background-color: #2a2a2a;
+    }
+
+    th, td {
+      border: 1px solid #555;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+      color: #f0c674;
+    }
+
+    tr:nth-child(even) {
+      background-color: #252525;
+    }
+
+    .deviz {
+      font-style: italic;
+      color: #b3b3b3;
+    }
+
+    .fa-icon {
+      margin-right: 8px;
+      color: #f0c674;
+    }
+  </style>
+</head>
+<body>
+  <h1><i class="fa-solid fa-hat-wizard fa-icon"></i>Школа Высшей Магии Эль’Альдара — Краткий Справочник</h1>
+
+ <p>
+    Вы — новички в Школе Высшей Магии Эль’Альдара, самом престижном учебном заведении, которое славится своей древней традицией и неоспоримой властью. Попасть сюда — уже достижение. Сложно, но возможно, и если вы здесь — значит, вам удалось пройти все испытания, которые школа подставила вам на пути.
+ </p>
+  <p>
+   С первого дня вам ясно одно: здесь не будут ласково встречать. Вам предстоит пробиваться через систему, полную теневых интриг и скрытой дискриминации. Учёба — это не только магия. Это не просто заклинания и ритуалы. Это борьба за выживание. И вы быстро поймёте, что стены этого места полны секретов, которые вам предстоит разгадать.
+  </p>
+  <p> 
+    Здесь, среди идеальных фасадов и чудесных технологий, скрывается кое-что более темное. Преподаватели всегда следят за вами, и кажется, что кто-то, кто должен вам помогать, может быть тем, кто первым бросит вас в опасность.
+  </p>
+
+  <details>
+    <summary><i class="fa-solid fa-scroll fa-icon"></i>Общая информация</summary>
+    <p><strong>Назначение:</strong> Школа предназначена исключительно для эльфов (включая полуэльфов) и высших эльфов.</p>
+    <p><strong>Формат:</strong> Два здания на одной территории: учебный корпус и общежитие.</p>
+    <p><strong>Уровень роскоши:</strong> Элитный. Всё дорого и пафосно.</p>
+    <p><strong>Технологии:</strong> Доступ ко всем современным разработкам всех рас.</p>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-book fa-icon"></i>Обучение и Курсы</summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Курс</th>
+          <th>Уровень персонажа</th>
+          <th>Описание</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1 курс</td>
+          <td>3 уровень</td>
+          <td>Основы магии, теоретические знания, практические занятия.</td>
+        </tr>
+        <tr>
+          <td>2 курс</td>
+          <td>4 уровень</td>
+          <td>Углубленные практики, участие в боях.</td>
+        </tr>
+        <tr>
+          <td>3 курс</td>
+          <td>5 уровень</td>
+          <td>Сложные магические практики, борьба за место среди лучших.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>Опыт:</strong></p>
+    <ul>
+      <li><strong>Победа:</strong> сложность × 1.5 (если бой был стратегичным)</li>
+      <li><strong>Поражение:</strong> сложность ÷ 2</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-user-graduate fa-icon"></i>Классы / Факультеты</summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Класс</th>
+          <th>Девиз</th>
+          <th>Изучаемые школы магии</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Волшебник</td>
+          <td class="deviz">Если ты не эльф — ты учишься, но не овладеешь</td>
+          <td>Высшая магия эльфов, Воплощение, Откровение</td>
+        </tr>
+        <tr>
+          <td>Друид</td>
+          <td class="deviz">Мы были до ваших замков и останемся после</td>
+          <td>Призыв, Трансмутация, Ограждение</td>
+        </tr>
+        <tr>
+          <td>Жрец</td>
+          <td class="deviz">Служение — это сила, сила — это свет</td>
+          <td>Ограждение, Некромантия, Воплощение</td>
+        </tr>
+        <tr>
+          <td>Колдун</td>
+          <td class="deviz">Кто заключил сделку — должен её отработать</td>
+          <td>Некромантия, Очарование, Иллюзия</td>
+        </tr>
+        <tr>
+          <td>Чародей</td>
+          <td class="deviz">Магия во мне. Не благодарите</td>
+          <td>Воплощение, Трансмутация, Очарование</td>
+        </tr>
+        <tr>
+          <td>Бард</td>
+          <td class="deviz">Искусство — тоже оружие</td>
+          <td>Иллюзия, Очарование, Призыв</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><em>*Высшая магия эльфов доступна только эльфам и избранным полуэльфам.</em></p>
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-crown fa-icon"></i>Социальные Классы</summary>
+    <ul>
+      <li>
+        <strong>Класс A — Архонты:</strong><br> 
+        Считается элитой академии. Сюда попадают исключительно представители благородных кровей: высокорожденные эльфы, потомки магических династий, избранники богов и те, кто либо родился с «золотой маной», либо спонсируется влиятельными силами. Обучение максимально углублённое: доступ к редчайшим артефактам, наставники-легенды, отдельные залы и личные фокусники. Их учат управлять не только магией, но и властью. Все остальные для них — "статисты".
+      </li>
+      <br> 
+      <li>
+        <strong>Класс B — Совершенствующиеся:</strong><br> 
+        Это академическая "серединка на половинку". Тут — обычные эльфы без титулов, продвинутые полуэльфы, выбившиеся вперёд за счёт упорства, дара или связи с дикой магией. Образование качественное, но с ограничениями: меньше практик, меньше доступа к тайным дисциплинам. Их могут допустить до высших знаний, если проявят сверхусердие или совершат что-то героическое. В глазах класса A — "подающие надежды, но не наши".
+      </li>
+      <br> 
+      <li>
+        <strong>Класс C — Неудобные:</strong><br> 
+        Самый спорный и самый живой слой академии. Дроу, люди, изгнанники, непризнанные полуэльфы, сироты, случайные "выбросы магии". Учебная программа — урезанная, практики — самые опасные, наставники — либо суровые ветераны, либо психи, которых сослали за этику. Этих учеников академия не столько обучает, сколько проверяет на выживаемость. Официально — все равны, по факту — это "мясо" для арены, опытов и черновых ритуалов. Но именно отсюда иногда выходят легенды. Если доживут.
+      </li>
+    </ul>    
+  </details>
+
+  <details>
+    <summary><i class="fa-solid fa-calendar-days fa-icon"></i>Расписание</summary>
+    <details>
+      <summary><i class="fa-solid fa-hat-wizard"></i> Волшебник</summary>
+      <ul>
+        <li class="day"><strong>Пн/Ср/Пт:</strong> Теория арканов, управление потоками, дуэли</li>
+        <li class="day"><strong>Вт/Чт:</strong> Лекции по Высшей магии, зачарование, ритуалы</li>
+        <li class="day"><strong>Выходные:</strong> Турниры, библиотека, консультации с Архимагом</li>
+      </ul>
+    </details>
+  
+    <details>
+      <summary><i class="fa-solid fa-leaf"></i> Друид</summary>
+      <ul>
+        <li class="day"><strong>Пн/Ср/Пт:</strong> Связь с природой, трансмутация растений, практики с духами</li>
+        <li class="day"><strong>Вт/Чт:</strong> Ритуалы стихий, алхимия, медитации</li>
+        <li class="day"><strong>Выходные:</strong> Походы в рощи, общение с фауной</li>
+      </ul>
+    </details>
+  
+    <details>
+      <summary><i class="fa-solid fa-cross"></i> Жрец</summary>
+      <ul>
+        <li class="day"><strong>Пн/Ср/Пт:</strong> Литургия силы, исцеление, дуэли</li>
+        <li class="day"><strong>Вт/Чт:</strong> История богов, световые барьеры, антинекромантия</li>
+        <li class="day"><strong>Выходные:</strong> Молитвы, очищения, служения</li>
+      </ul>
+    </details>
+  
+    <details>
+      <summary><i class="fa-solid fa-skull"></i> Колдун</summary>
+      <ul>
+        <li class="day"><strong>Пн/Ср/Пт:</strong> Контракты с сущностями, страх и иллюзии, вызовы</li>
+        <li class="day"><strong>Вт/Чт:</strong> Углублённая некромантия, манипуляции с сознанием</li>
+        <li class="day"><strong>Выходные:</strong> Тёмные ритуалы, сессии с наставником</li>
+      </ul>
+    </details>
+  
+    <details>
+      <summary><i class="fa-solid fa-fire"></i> Чародей</summary>
+      <ul>
+        <li class="day"><strong>Пн/Ср/Пт:</strong> Внутренние резервы, взрывы, телепортация</li>
+        <li class="day"><strong>Вт/Чт:</strong> Очарование, трансмутация плоти</li>
+        <li class="day"><strong>Выходные:</strong> Испытания на выносливость, работа с маной</li>
+      </ul>
+    </details>
+  
+    <details>
+      <summary><i class="fa-solid fa-music"></i> Бард</summary>
+      <ul>
+        <li class="day"><strong>Пн/Ср/Пт:</strong> Магия слова, песнь чар, дуэли звуком</li>
+        <li class="day"><strong>Вт/Чт:</strong> Иллюзии, музыкальные призывы</li>
+        <li class="day"><strong>Выходные:</strong> Концерты, творческие дуэли</li>
+      </ul>
+    </details>
+  </details>
+</body>
+</html>
